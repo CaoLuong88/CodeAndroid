@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@android:color/holo_blue_light"
+        android:text="Thong tin ca nhan"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+
+        >
+    <TextView
+        android:layout_width="wrap_content"
+
+
+        android:text="Ho va ten"
+        android:layout_height="wrap_content"></TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="CMND/CCCD"
+            android:layout_height="wrap_content"></TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></EditText>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@android:color/holo_blue_light"
+        android:text="Bang cap"
+        />
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:text="Trung cap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </RadioButton>
+            <RadioButton
+                android:text="Cao dang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </RadioButton>
+            <RadioButton
+                android:text="dai hoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </RadioButton>
+        </RadioGroup>
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@android:color/holo_blue_light"
+        android:text="So thich"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:text="Manager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </CheckBox>
+        <CheckBox
+            android:text="Testter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </CheckBox>
+        <CheckBox
+            android:text="Coding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </CheckBox>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@android:color/holo_blue_light"
+        android:text="Thong tin bo sung"
+        />
+    <RadioGroup
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:checked="true"
+            android:text="Senior Programing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </RadioButton>
+        <RadioButton
+            android:text="Senior Saler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </RadioButton>
+    </RadioGroup>
+    <Button
+        android:text="Gui thong tin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Button>
+
+</LinearLayout>

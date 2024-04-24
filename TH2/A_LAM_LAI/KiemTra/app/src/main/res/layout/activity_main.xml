@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:background="@android:color/holo_blue_light"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="THỰC HIỆN CHỨC NĂNG!" />
+
+        <Button
+            android:background="@android:color/holo_orange_dark"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:id="@+id/bt_phepTinh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phép tính 2 số" />
+
+        <Button
+            android:layout_margin="5dp"
+            android:background="@android:color/holo_blue_light"
+            android:textColor="@color/white"
+            android:id="@+id/bt_thongTin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhập thông tin cá nhân">
+
+        </Button>
+        <Button
+            android:background="@android:color/holo_blue_light"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:id="@+id/btLVCoBan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="List View cơ bản " />
+        <Button
+            android:background="@android:color/holo_blue_light"
+            android:textColor="@color/white"
+            android:layout_margin="5dp"
+            android:id="@+id/btLVNangCao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="List View nâng cao " />
+        <Button
+            android:layout_margin="5dp"
+            android:background="@android:color/holo_red_light"
+            android:textColor="@color/white"
+            android:id="@+id/btthoat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quay lại">
+
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

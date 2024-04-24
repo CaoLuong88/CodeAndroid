@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="16dp">
+
+<EditText
+    android:id="@+id/editTextDisplay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="0"
+    android:gravity="end"
+    android:textSize="24sp"
+    android:inputType="text"
+    android:layout_marginBottom="16dp" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <!-- Số từ 0 đến 9 -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7"
+        android:onClick="onNumberClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8"
+        android:onClick="onNumberClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        android:onClick="onNumberClick" />
+
+    <!-- Phép toán: +, -, *, / -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:onClick="onOperatorClick" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <!-- Dấu "." và "=" -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="."
+        android:onClick="onDecimalClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="="
+        android:onClick="onEqualsClick" />
+    <!-- Số từ 0 đến 9 -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        android:onClick="onNumberClick" />
+
+    <!-- Tương tự với các button số còn lại (5, 6, 1, 2, 3, 0) -->
+    <!-- Các button dấu còn lại (Trừ, Nhân, Chia) -->
+
+    <!-- Button "Delete" -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Del"
+        android:onClick="onDeleteClick" />
+</LinearLayout>
+
+</LinearLayout>

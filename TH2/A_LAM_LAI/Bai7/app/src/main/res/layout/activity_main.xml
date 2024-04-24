@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kiem tra thong tin co ban!" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email" />
+
+    <EditText
+        android:id="@+id/edEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress">
+
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dien thoai" />
+
+    <EditText
+        android:id="@+id/edDienThoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone">
+
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngay sinh" />
+
+    <EditText
+        android:id="@+id/edNgaySinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/btDongY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dong y"></Button>
+
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="THONG TIN CA NHAN"></TextView>
+
+    <EditText
+        android:id="@+id/et_HoTen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint=" ho ten    "></EditText>
+
+    <EditText
+        android:id="@+id/et_NgaySinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint=" ngay sinh  "></EditText>
+
+    <RadioGroup
+        android:id="@+id/rgNamNu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rdbt_Nam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Nam"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rdbt_Nu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nu"></RadioButton>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="La sinh vien"
+
+            ></TextView>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Switch>
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spKhoa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        ></Spinner>
+
+    <Button
+        android:id="@+id/bt_HienThi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hien thi"></Button>
+
+    <Button
+        android:id="@+id/btThoatThongTin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thoat"></Button>
+</LinearLayout>

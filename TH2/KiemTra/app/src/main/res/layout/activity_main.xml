@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Hello World!"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+
+    <TextView
+        android:id="@+id/textViewTenMH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên môn học:"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="18dp" />
+
+    <EditText
+        android:id="@+id/editTextTextTenMH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="57dp" />
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Môn học thực hành"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="142dp" />
+
+
+    <TextView
+        android:id="@+id/textViewPH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phòng học"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="168dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="192dp" />
+
+    <TextView
+        android:id="@+id/textViewT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thứ:"
+        tools:layout_editor_absoluteX="15dp"
+        tools:layout_editor_absoluteY="265dp" />
+
+    <EditText
+        android:id="@+id/editTextTextT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="315dp" />
+    <TableRow>
+    <TextView
+        android:id="@+id/textViewTT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tuần học từ:"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="383dp" />
+
+
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="400dp" />
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="đến"
+            tools:layout_editor_absoluteX="207dp"
+            tools:layout_editor_absoluteY="423dp" />
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="257dp"
+        tools:layout_editor_absoluteY="402dp" />
+    </TableRow>
+    <TextView
+    android:id="@+id/textView7"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Tiết học"
+    tools:layout_editor_absoluteX="36dp"
+    tools:layout_editor_absoluteY="425dp" />
+    <TableRow>
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="453dp" />
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="448dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        tools:layout_editor_absoluteX="207dp"
+        tools:layout_editor_absoluteY="459dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        tools:layout_editor_absoluteX="319dp"
+        tools:layout_editor_absoluteY="455dp" />
+    </TableRow>
+    <TableRow>
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="509dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6"
+        tools:layout_editor_absoluteX="122dp"
+        tools:layout_editor_absoluteY="509dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7"
+        tools:layout_editor_absoluteX="221dp"
+        tools:layout_editor_absoluteY="522dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8"
+        tools:layout_editor_absoluteX="323dp"
+        tools:layout_editor_absoluteY="515dp" />
+    </TableRow>
+    <TableRow>
+    <CheckBox
+        android:id="@+id/checkBox9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="583dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="578dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="11"
+        tools:layout_editor_absoluteX="221dp"
+        tools:layout_editor_absoluteY="579dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="13"
+        tools:layout_editor_absoluteX="241dp"
+        tools:layout_editor_absoluteY="632dp" />
+  <CheckBox
+        android:id="@+id/checkBox12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12"
+        tools:layout_editor_absoluteX="328dp"
+        tools:layout_editor_absoluteY="579dp" />
+    </TableRow>
+    <TableRow android:gravity="center" >
+    <Button
+        android:text="Đăng ký"
+        android:id="@+id/btDK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        >
+
+    </Button>
+    </TableRow>
+    <TableRow>
+    <TextView
+        android:id="@+id/textViewInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:text=""
+        android:textSize="18sp" />
+    </TableRow>
+</TableLayout>

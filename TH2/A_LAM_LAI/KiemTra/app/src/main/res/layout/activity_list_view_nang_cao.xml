@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+    android:orientation="vertical"
+  android:layout_height="match_parent">
+   <LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+    <CheckBox
+        android:id="@+id/cbAndroid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textSize="20sp"/>
+    <!-- Vertical LinearLayout to hold TextViews -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp">
+        <!-- Task Name TextView -->
+        <TextView
+            android:text="Học android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <!-- Time TextView -->
+        <TextView
+            android:text="03/04/2024"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@android:color/darker_gray"/>
+
+    </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+        <CheckBox
+            android:id="@+id/cbJS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"/>
+        <!-- Vertical LinearLayout to hold TextViews -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp">
+            <!-- Task Name TextView -->
+            <TextView
+                android:text="Học JS"
+                android:id="@+id/txtTenCV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+
+            <!-- Time TextView -->
+            <TextView
+                android:text="03/04/2024"
+                android:id="@+id/txtThoigian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@android:color/darker_gray"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

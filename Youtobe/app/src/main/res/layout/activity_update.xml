@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+
+    tools:context=".UpdateActivity">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name" />
+
+    <EditText
+        android:id="@+id/et_Name_Update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        />
+
+    <TextView
+        android:id="@+id/tv12321"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Age" />
+
+    <EditText
+        android:id="@+id/et_Age_Update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/btnAdd_Update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm"
+        android:onClick="btnAdd_Update_click"/>
+    <Button
+        android:id="@+id/btnSua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sua"
+        android:onClick="btnAdd_Update_click"/>
+    <Button
+        android:id="@+id/btnXoa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xoa"
+        android:onClick="btnAdd_Update_click"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quay lại"
+        android:onClick="btnBack_Update_click"/>
+
+</LinearLayout>
+</LinearLayout>

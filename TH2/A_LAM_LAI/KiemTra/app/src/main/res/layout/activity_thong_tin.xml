@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    android:layout_marginLeft="10dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_light"
+        android:textColor="@color/white"
+        android:text="THÔNG TIN CÁ NHÂN"></TextView>
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Họ tên:     "
+            android:layout_height="wrap_content">
+        </TextView>
+        <EditText
+            android:layout_margin="5dp"
+            android:id="@+id/et_HoTen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập họ tên"
+            android:textSize="15dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Ngày sinh:"
+            android:layout_height="wrap_content">
+        </TextView>
+        <EditText
+            android:layout_margin="5dp"
+            android:id="@+id/et_NgaySinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập ngày sinh"
+            android:textSize="15dp"
+         android:inputType="number"
+            />
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_margin="5dp"
+        android:id="@+id/rgGioiTinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Chọn giới tính:"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+        <RadioButton
+            android:id="@+id/rdbt_Nam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nam"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rdbt_Nu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nữ"></RadioButton>
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:text="Chọn môn học:"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+        <CheckBox
+            android:id="@+id/cbTiengAnh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tiếng anh">
+
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/cbTiengNhat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tiếng nhật">
+
+        </CheckBox>
+
+    </LinearLayout>
+
+    <Switch
+        android:layout_margin="5dp"
+        android:id="@+id/swSinhVien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Là sinh viên "></Switch>
+
+    <LinearLayout
+        android:id="@+id/ll_student"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mã sinh viên:" />
+
+        <EditText
+            android:id="@+id/et_student_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Nhập mã sinh viên" />
+
+    </LinearLayout>
+
+    <Spinner
+        android:layout_margin="5dp"
+        android:id="@+id/spKhoa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        ></Spinner>
+
+    <Button
+        android:layout_margin="5dp"
+        android:id="@+id/bt_HienThi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_light"
+        android:textColor="@color/white"
+        android:text="Hiển thị"></Button>
+
+    <Button
+        android:layout_margin="5dp"
+        android:id="@+id/btThoatThongTin"
+        android:background="@android:color/holo_red_light"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quay lại"></Button>
+</LinearLayout>
