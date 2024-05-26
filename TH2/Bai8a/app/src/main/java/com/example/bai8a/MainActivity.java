@@ -63,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
                     btnLogout.setVisibility(View.VISIBLE);
 
                     // Ẩn form đăng nhập
+                    
                     etUsername.setVisibility(View.GONE);
                     etPassword.setVisibility(View.GONE);
                     btnLogin.setVisibility(View.GONE);

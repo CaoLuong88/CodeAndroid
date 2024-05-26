@@ -45,7 +45,7 @@
         <EditText
             android:id="@+id/editSoB"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_h1eight="wrap_content"
             android:layout_span="2"
             android:ems="10"
             android:inputType="numberDecimal" />
@@ -98,7 +98,7 @@
 
         <Button
             android:id="@+id/btthoat"
-            android:layout_gravity="center_vertical"
+            android:layout_gravity="center"
             android:text="Thoát"></Button>
     </TableRow>
 

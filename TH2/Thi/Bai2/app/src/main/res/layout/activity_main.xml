@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:shrinkColumns="*"
+    android:stretchColumns="*"
+    android:layout_marginTop="50dp"
+    tools:context=".MainActivity">
+
+    <TableRow>
+        <TextView
+            android:layout_span="1"
+            android:text="Nhap so A"
+            android:textAlignment="textEnd"
+            ></TextView>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editSoA"
+            android:inputType="numberDecimal|numberSigned"
+            android:layout_span="2"
+
+            ></EditText>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_span="1"
+            android:text="Nhap so B"
+            android:textAlignment="textEnd"
+            ></TextView>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editSoB"
+            android:inputType="numberDecimal|numberSigned"
+            android:layout_span="2"
+
+            ></EditText>
+    </TableRow>
+    <TableRow
+
+        >
+        <Button
+            android:text="+"
+            android:id="@+id/btCong"
+            ></Button>
+        <Button
+            android:text="-"
+            android:id="@+id/btTru"
+            ></Button>
+        <Button
+            android:text="*"
+            android:id="@+id/btNhan"
+            ></Button>
+        <Button
+            android:text="/"
+            android:id="@+id/btChia"
+            ></Button>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:textAlignment="textEnd"
+            android:layout_span="1"
+            android:text="ket qua:"
+            ></TextView>
+        <EditText
+            android:layout_span="2"
+            android:id="@+id/editKetQua"
+            ></EditText>
+    </TableRow>
+    <TableRow
+        android:gravity="center_horizontal"
+        >
+    <Button
+        android:text="Thoat"
+        android:id="@+id/btThoat"
+        ></Button></TableRow>
+</TableLayout>

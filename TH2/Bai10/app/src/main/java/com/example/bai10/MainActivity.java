@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         lvmonhoc.setAdapter(adapter);
         lvmonhoc.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parentVieư, View v, int i, long l) {
+            public void onItemClick(AdapterView<?> parentView, View v, int i, long l) {
                 ShowDialogDelete(i);
                 return;
             }

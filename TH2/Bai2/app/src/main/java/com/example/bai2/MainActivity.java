@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void calculateResult(char operator) {
-        double num1 = Double.parseDouble(editText1.getText().toString());
+        double num1=Double.parseDouble(editText1.getText().toString());
         double num2 = Double.parseDouble(editText2.getText().toString());
         double result = 0;
 
@@ -85,8 +85,6 @@ public class MainActivity extends AppCompatActivity {
                 }
                 break;
         }
-////
         textViewResult.setText(" " + result);
-
     }
 }

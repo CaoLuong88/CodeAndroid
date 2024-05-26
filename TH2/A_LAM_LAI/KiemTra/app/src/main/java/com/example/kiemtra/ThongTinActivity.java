@@ -3,6 +3,7 @@ package com.example.kiemtra;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -40,10 +41,10 @@ public class ThongTinActivity extends AppCompatActivity {
         cbJapanese=findViewById(R.id.cbTiengNhat);
         llStudentCode = findViewById(R.id.ll_student);
         StudentCode = findViewById(R.id.et_student_code);
-        String[] dulieukhoa={"CNTT&TT","NHOAI NGU","KINH TE"};
-        ArrayAdapter<String> adapter=new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,dulieukhoa);
-        spinnerKhoa.setAdapter(adapter);
 
+       String[] dulieukhoa={"Kinh te","Tieng anh","CNTT"};
+       ArrayAdapter<String> adapter=new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,dulieukhoa);
+       spinnerKhoa.setAdapter(adapter);
         sinhvien.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -57,28 +58,50 @@ public class ThongTinActivity extends AppCompatActivity {
         hienthi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String name=hoten.getText().toString();
-                String birthday=ngaysinh.getText().toString();
-                String masv=StudentCode.getText().toString();
-                String chonkhoa=spinnerKhoa.getSelectedItem().toString();
-                int chonrdbid=rggioitinh.getCheckedRadioButtonId();
-                RadioButton chonrdb=findViewById(chonrdbid);
-                String gioitinh=chonrdb.getText().toString();
-
-                StringBuilder sbLanguages = new StringBuilder();
-                // Lấy dữ liệu từ checkbox
-                if (cbEnglish.isChecked()) {
-                    sbLanguages.append("Tiếng Anh").append("\n");
-                }
-                if (cbJapanese.isChecked()) {
-                    sbLanguages.append("Tiếng Nhật").append("\n");
-                }
-                Switch sw = findViewById(R.id.swSinhVien);
-                boolean isOn = sw.isChecked();
-
+//                String name=hoten.getText().toString();
+//                String birthday=ngaysinh.getText().toString();
+//                String masv=StudentCode.getText().toString();
+//                String chonkhoa=spinnerKhoa.getSelectedItem().toString();
+//                int chonrdbid=rggioitinh.getCheckedRadioButtonId();
+//                RadioButton chonrdb=findViewById(chonrdbid);
+//                String gioitinh=chonrdb.getText().toString();
+               String name=hoten.getText().toString();
+               String birthday=ngaysinh.getText().toString();
+               String masv=StudentCode.getText().toString();
+               String chonkhoa=spinnerKhoa.getSelectedItem().toString();
+               int chonrdid=rggioitinh.getCheckedRadioButtonId();
+               RadioButton chonrd=findViewById(chonrdid);
+               String gioitinh=chonrd.getText().toString();
+//
+//                StringBuilder sbLanguages = new StringBuilder();
+//                // Lấy dữ liệu từ checkbox
+//                if (cbEnglish.isChecked()) {
+//                    sbLanguages.append("Tiếng Anh").append("\n");
+//                }
+//                if (cbJapanese.isChecked()) {
+//                    sbLanguages.append("Tiếng Nhật").append("\n");
+//                }
+//                Switch sw = findViewById(R.id.swSinhVien);
+//                boolean isOn = sw.isChecked();
+              StringBuilder chonngonngu=new StringBuilder();
+              if(cbEnglish.isChecked()){
+                  chonngonngu.append("Tieng Anh").append("\n");
+              }
+              if(cbJapanese.isChecked()){
+                  chonngonngu.append("Tieng Nhat").append("\n");
+              }
+              Switch sw=findViewById(R.id.swSinhVien);
+              boolean battat=sw.isChecked();
+//
+//                AlertDialog.Builder builder=new AlertDialog.Builder(ThongTinActivity.this);
+//                builder.setTitle("Hiển thị thông tin");
+//                builder.setMessage("Họ tên: "+name+"\nNgày sinh: "+birthday+"\nGiới tính: "+gioitinh+"\n Môn học: "+sbLanguages.toString()+(isOn ? "Là sinh viên \n Mã sinh viên: " +masv : "Không là sinh viên")+"\nKhoa: "+chonkhoa+"\n");
+//                builder.setPositiveButton("Dong",null);
+//                AlertDialog dialog=builder.create();
+//                dialog.show();
                 AlertDialog.Builder builder=new AlertDialog.Builder(ThongTinActivity.this);
-                builder.setTitle("Hiển thị thông tin");
-                builder.setMessage("Họ tên: "+name+"\nNgày sinh: "+birthday+"\nGiới tính: "+gioitinh+"\n Môn học: "+sbLanguages.toString()+(isOn ? "Là sinh viên" : "Không là sinh viên")+"\n Mã sinh viên: "+masv+"\nKhoa: "+chonkhoa+"\n");
+                builder.setTitle("Hien thi thong tin");
+                builder.setMessage("Ho ten:"+name+"\nNgay sinh:"+ngaysinh+"\nGioi tinh:"+gioitinh+"\nMon hoc:"+chonngonngu.toString()+(battat ? "La sinh vien:"+masv : "khong la sinh vien") +"\nKhoa:" +chonkhoa ) ;
                 builder.setPositiveButton("Dong",null);
                 AlertDialog dialog=builder.create();
                 dialog.show();
@@ -88,7 +111,16 @@ public class ThongTinActivity extends AppCompatActivity {
         thoat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+                AlertDialog.Builder builder=new AlertDialog.Builder(ThongTinActivity.this);
+                builder.setTitle("Thong bao");
+                builder.setMessage("Ban co muon thoat");
+                builder.setNegativeButton("Huy",null);
+                builder.setPositiveButton("Dong y", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        finish();
+                    }
+                });
             }
         });
     }
